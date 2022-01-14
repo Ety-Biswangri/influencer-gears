@@ -93,3 +93,20 @@ body{
     justify-content: center;
     align-items: flex-end;
 }
+
+/* footer part css */
+.footer{
+    height: 239px;
+    background-color: #0A0826;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
