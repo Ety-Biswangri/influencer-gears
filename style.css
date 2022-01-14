@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* header part css */
+.header{
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+/* main part css */
+.main-title h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* navigation part css */
+.nav ul{
+    display: flex;
+}
+
+.nav ul li{
+    margin: 0px 20px 0px 0px;
+    list-style: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+    font-weight: 700;
+}
+
+/* first section part css */
+.first-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.first-section-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.first-section-left h1{
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.first-section-left p{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 16px 0;
+}
+
+.preebook-button{
+    outline: 0;
+    border: 0;
+    background-color: #E02C6D;
+    Padding: 10px 24px;
+    border-radius: 41px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.preebook-button .forward-arrow{
+    margin-left: 8px;
+}
+
+.first-section-right{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
