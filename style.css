@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -20,7 +24,7 @@ body{
 }
 
 /*----------------------------------------
- ------------header part css------------ */
+ ------------header upper part style------------ */
 .header-upper{
     display: flex;
     justify-content: space-between;
@@ -129,6 +133,8 @@ body{
     font-weight: 700;
 }
 
+/* header bottom part style */
+
 .header-bottom{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -180,7 +186,7 @@ body{
 .header-bottom-right{
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
     margin-left: 133px;
 }
 
@@ -325,7 +331,7 @@ body{
     width: 90%;
 }
 
-/* footer part css */
+/* footer part style */
 .footer{
     height: 239px;
     background-color: #0A0826;
@@ -351,4 +357,69 @@ body{
 .footer .social-net-icon a i{
     margin: 16px 16px;
     color: white;
+}
+
+
+/* responsiveness part style */
+/* mobile devices */
+
+@media (max-width: 668px) {
+
+    .header-upper{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 50px;
+        height: fit-content;
+    }
+    
+    .header-upper-title h2{
+        font-size: 24px;
+        font-weight: 700;
+        position: relative;
+    }
+    .header-bottom-left h1{
+        font-size: 40px;
+    }
+
+    .header-bottom{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 60px;
+    }
+
+    .header-bottom-left{
+        text-align: center;
+    }
+
+    #arrow-button{
+        margin: auto;
+    }
+
+    .header-bottom-right{
+        margin-left: 0px;
+    }
+
+    .header-bottom-right img{
+        max-width: 60%;
+    }
+
+    .collections{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-title {
+        margin-bottom: 15px;
+    }
+
+    .see-more-link {
+        margin-right: 118px;
+    }
+    .contact{
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 50px;
+    }
+
+    .contact-right img {
+        margin-left: 15px;
+    }
 }
