@@ -182,6 +182,13 @@ body{
     object-fit: cover;
 }
 
+.header-bottom-right:hover img{
+    transform: scale(1.2);
+    transition: transform 3s ease;
+    background-color: #fae8effa;
+    border-radius: 50%;
+}
+
 /* main part style */
 .first-section{
     margin-bottom: 100px;
