@@ -24,9 +24,9 @@ body{
 .header-upper{
     display: flex;
     justify-content: space-between;
-    height: 90px;
+    height: 155px;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 
 .header-upper-title h2{
@@ -87,7 +87,7 @@ body{
     font-weight: 700;
 }
 
-.preebook-button .forward-arrow{
+.forward-arrow{
     margin-left: 8px;
 }
 
@@ -120,6 +120,7 @@ body{
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
     grid-row-gap: 50px;
+    margin-bottom: 50px;
 }
 
 .collection{
@@ -177,6 +178,17 @@ body{
     color: #787885;
 }
 
+.see-more-link{
+    text-align: right;
+}
+
+.see-more-link a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #E02C6D;
+    font-weight: 700;
+}
+
 /* footer part css */
 .footer{
     height: 239px;
@@ -186,11 +198,17 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .footer h3{
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.footer small{
+    color: #D9DBE1;
     margin-bottom: 5px;
 }
 
