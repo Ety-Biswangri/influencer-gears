@@ -423,3 +423,43 @@ body{
         margin-left: 15px;
     }
 }
+
+@media only screen and (min-width: 669px) and (max-width: 992px){
+
+}
+
+/* tablet devices */
+@media only screen and (min-width: 669px) and (max-width: 992px){
+    .collections {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header-bottom {
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 60px;
+    }
+
+    .header-bottom-left{
+        text-align: center;
+        margin: auto;
+    }
+
+    #tablet-mode-head-bottom-h1{
+        text-align: center;
+        margin: auto;
+    }
+
+    #arrow-button{
+        margin: auto;
+    }
+
+    .header-bottom-right{
+        margin-left: 0px;
+    }
+
+    .header-bottom-right img{
+        max-width: 60%;
+    }
+}
+
+
