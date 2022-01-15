@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
 /*--------------------------------
---------common style part----------- */
+  common style part
+  ----------------------------- */
 
 *{
     margin: 0px;
@@ -24,7 +25,8 @@ body{
 }
 
 /*----------------------------------------
- ------------header upper part style------------ */
+  header upper part style
+  ------------------------------- */
 .header-upper{
     display: flex;
     justify-content: space-between;
@@ -117,7 +119,9 @@ body{
     }
 }
 
-/* navigation part style */
+/*----------------------
+navigation part style
+------------------------- */
 .nav ul{
     display: flex;
 }
@@ -133,7 +137,9 @@ body{
     font-weight: 700;
 }
 
-/* header bottom part style */
+/*--------------------------
+ header bottom part style
+ ---------------------------- */
 
 .header-bottom{
     display: grid;
@@ -201,7 +207,9 @@ body{
     border-radius: 50%;
 }
 
-/* main part style */
+/*----------------------
+ main part style
+ ----------------------- */
 .first-section{
     margin-bottom: 100px;
 }
@@ -360,10 +368,12 @@ body{
 }
 
 
-/* responsiveness part style */
+/*-------------------------
+ responsiveness part style
+ -------------------------- */
 /* mobile devices */
 
-@media (max-width: 576px) {
+@media (max-width: 750px) {
 
     .header-upper{
         display: flex;
@@ -426,7 +436,7 @@ body{
 }
 
 /* tablet devices */
-@media only screen and (min-width: 577px) and (max-width: 768px){
+@media only screen and (min-width: 751px) and (max-width: 1100px){
     .header-upper{
         display: flex;
         flex-direction: column;
@@ -471,17 +481,14 @@ body{
         max-width: 60%;
     }
     .collections{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
     }
 }
 
-/*---------------------------------
-   medium large and large devices
------------------------------------- */
-@media only screen and (min-width: 769px) and (max-width: 1300px){
-    .collections {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
+/* medium large and large devices */
+ @media only screen and (min-width: 1101px) and (max-width: 1200px){
 
     .header-bottom {
         grid-template-columns: repeat(1, 1fr);
@@ -509,6 +516,10 @@ body{
     .header-bottom-right img{
         max-width: 60%;
     }
-}
 
+    .collections {
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 30px;
+    }
+}
 
